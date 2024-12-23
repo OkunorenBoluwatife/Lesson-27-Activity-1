@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+        <h2>JavaScript Array-- Sort and Reverse</h2>
+
+        <p>The sort() method sorts an array alphabetically.</p>
+        <p>The reverse() method reverse the elements in an array.</p>
+
+
+
+        <button onclick="sortfunction()">Sort me</button>
+        <br>
+        <br>
+        <button onclick="reversefunction()">Reverse me</button>
+
+        <p id="result"></p>
+
+        <script>
+
+            var colors = ["Zoro", "Luffy", "Sanji", "Nami", "Ussopp", "Chopper", "Franky", "Brook", "Jinbei"];
+
+            document.getElementById("result").innerHTML = colors;
+            function sortfunction() {
+
+                colors.sort();
+                document.getElementById("result").innerHTML = colors;
+            }
+            function reversefunction() {
+
+                colors.reverse();
+                document.getElementById("result").innerHTML = colors;
+            }
+        </script>
+    </center>
+</body>
+
+</html>
